@@ -1,0 +1,20 @@
+module.exports = {
+	'likes': '{ likes, plural , '+'=0 {no likes}'+' =1 {# like}'+' other { # likes}}',
+	'logout': 'Logout',
+	'english': 'English',
+	'espanish': 'Spanish',
+	'signup.subheading': 'Sign up and create Discipline in your day to day with our help!',
+	'signup.facebook': 'Sign in with',
+	'email': 'Email',
+	'username': 'Username',
+	'fullname': 'Full name',
+	'password': 'Password',
+	'signup.call-to-action': 'Sign up',
+	'signup.have-account': 'Already have an account?',
+	'signin': 'Sign in',
+	'signin.not-have-account': 'Don\'t have an account?',
+	'lenguage': 'Lenguage',
+	'upload-picture': 'Upload picture',
+	'upload': 'Confirm',
+	'cancel': 'Delete'
+}

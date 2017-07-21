@@ -1,0 +1,263 @@
+@import "node_modules/materialize-css/sass/materialize.scss";
+@import "./load";
+
+body{
+	background-color: #fafafa;
+	color: black;
+	font-family: 'Pangolin', cursive;
+}
+
+#contenedor-principal{
+	margin: 30px auto;
+}
+
+.iphone{
+	max-width: 100%;
+}
+
+.site-footer{
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.login-box,
+.signup-box{
+	background-color: white;
+	border: 1px solid #edeeee;
+	border-radius: 5px;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.Disciplinappte{
+	font-family: 'Lily Script One', cursive;
+	font-size: 42px;
+}
+
+.signup-form{
+	width: 65%;
+	margin: 0 auto;
+}
+
+.signup-form h2{
+	color: #a5a7aa;
+	font-size: 1.2em;
+}
+
+.signup-form .btn.btn-fb{
+	background-color: #4090db;
+	font-size: .9em;
+}
+
+.signup-form .btn.btn-fb:hover{
+	background-color: #2d6599;
+}
+
+.signup-form .btn.signup-btn, .footer-btn{
+	background-color: black;
+}
+
+.signup-form .btn.signup-btn:hover, .footer-btn:hover{
+	background-color: #4e4c4c;
+}
+
+.dropdown-content li a{
+	color: black;
+}
+
+.landing{
+	margin-top: 30px;
+}
+
+.timeline{
+	padding: 30px 0;
+}
+
+$avatar-size: 48px;
+
+.avatar{
+	width: $avatar-size !important;
+	height: $avatar-size !important;
+	border-radius: 50% !important;
+	margin-right: 12px !important;
+}
+
+.card small.time{
+	position: relative;
+	bottom: 20px;
+}
+
+.card p{
+	padding: 20px 0;
+}
+
+.card .likes{
+	line-height: 30px;
+	margin-left: 12px;
+}
+
+.card i{
+	font-size: 30px;
+}
+
+.card .fa-heart-o{
+	color: red;
+}
+
+.card .fa-heart{
+	color: red;
+	display: none;
+}
+
+.card.liked{
+	.fa-heart{
+		display: block;
+	}
+	.fa-heart-o{
+		display: none;
+	}
+}
+
+.btn-large.btn-flat:hover{
+	background-color: #eab4b6;
+}
+
+.btn-large.btn-flat i.fa-user{
+	color: white;
+}
+
+.form-update{
+
+	span, button{
+		color:white;
+	}
+
+	.fileUpdate{
+		position: relative;
+		overflow: hidden;
+		margin: 10px;
+
+		input{
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: 0;
+			padding: 0;
+			font-size: 20px;
+			cursor: pointer;
+			opacity: 0;
+			filter: alpha(opacity=0);
+		}
+	}
+}
+
+/* estilos de la página de usuario*/
+			.perfil{
+		  		margin-top: 50px;
+		  	}
+		  	.profilePhoto{
+		  		border-radius: 50%;
+				height: 150px !important;
+		  	}
+		  	.boxNombe, .boxDescription{
+		  		margin-bottom: 0;
+		  	}
+		  	.nombre h1{
+		  		font-size: 2rem;
+		  		margin-top: 0;
+		  		margin-bottom: 0;
+		  	}
+		  	.nombreUsuario{
+		  		margin-right: 5px;
+		  	}
+		  	.estado a{
+		  		font-size: 0.8rem;
+		  		padding: 0 15px;
+		  	}
+		  	.social p{
+		  		margin: 0;
+		  	}
+		  	.likess{
+		  		display: none;
+		  		position: absolute;
+		  		text-align: center;
+		  		top: 30%;
+		  		left: 0;
+		  		right: 0;
+		  		bottom: 0;
+		  		z-index: 100;
+		  		color: red;
+		  	}
+			.card.picturePerfil{
+		  		width: 200px;
+		  	}
+		  	.card.picturePerfil .card-image:hover{
+		  		background-color: rgba(232,232,232,1);
+		  		transition: .3s;
+		  	}
+		  	.card.picturePerfil .card-image:hover .likess, .card .fa-heart.likesHeart{ 
+		  		display: inline-block;
+		  	}
+
+/* estilos de la página de usuario*/
+
+/* estilos del modal*/
+
+.modal-footer{
+	.fa-heart{
+		display: inline-block;
+	}
+}
+
+.likeHeart{
+	font-size: 10em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	transition: all .1s ease;
+	opacity: 0;
+
+	&.liked{
+		color: red;
+		font-size: 12em;
+		display: block;
+		transition: all .5s ease;
+		opacity: 1;
+		z-index: 100;
+	}
+}
+
+#modalCamara{
+	width: 640px;
+	height: 365px;
+	background-color: white;
+	margin: 0 auto;
+	z-index: 1000;
+	position: absolute;
+}
+
+#picture-preview img{
+	width: 320px;
+	height: 240px;
+}
+
+#camara-input{
+	position: relative;
+	left: 23%;
+}
+
+.fileUpdate a.waves-effect{
+	display: inline-block !important;
+}
+
+#btnFoto{
+	text-align: center;
+}
+
+.ocultar{
+	display: none !important;
+}
