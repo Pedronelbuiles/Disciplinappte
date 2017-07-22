@@ -118,7 +118,9 @@ app.get('/:username/:id', function (req, res) {
 	res.render('index', {title: `${req.params.username}`})
 })
 
-app.listen(3000,function (err) {
+var port = process.env.PORT || 3000;
+
+app.listen(port,function (err) {
 	if (err) return console.log('Tenemos un error'), process.exit(1);
-	console.log('Escuchando en el puerto 3000');
+	console.log('Escuchando en el puerto '+ port);
 })
