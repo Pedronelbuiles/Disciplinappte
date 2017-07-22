@@ -118,8 +118,6 @@ app.get('/:username/:id', function (req, res) {
 	res.render('index', {title: `${req.params.username}`})
 })
 
-var port = process.env.PORT || 3000;
-
 app.listen(port,function (err) {
 	if (err) return console.log('Tenemos un error'), process.exit(1);
 	console.log('Escuchando en el puerto '+ port);
